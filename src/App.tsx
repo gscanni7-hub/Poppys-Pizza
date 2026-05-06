@@ -529,7 +529,7 @@ const NewsletterFooter = () => (
           <div className="space-y-8">
             <h4 className="text-[10px] tracking-[.3em] font-black opacity-40 uppercase">FOLLOW US</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 border border-white/20 rounded-xl flex items-center justify-center hover:bg-white hover:text-brand-red transition-all">
+              <a href="https://www.instagram.com/poppyszurich" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/20 rounded-xl flex items-center justify-center hover:bg-white hover:text-brand-red transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 border border-white/20 rounded-xl flex items-center justify-center hover:bg-white hover:text-brand-red transition-all">
