@@ -54,7 +54,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 bg-brand-bg/95 backdrop-blur-sm border-b border-brand-red/5 transition-shadow duration-300 ${scrolled ? 'shadow-lg shadow-brand-red/10' : ''}`}>
       <div className="flex items-center justify-between px-6 md:px-12 py-2">
         <div className="flex items-center gap-3">
-          <img src="/images/tagliato.png" alt="Poppy's Pizza" className="h-7 w-auto object-contain" />
+          <img src="/images/tagliato.webp" alt="Poppy's Pizza" className="h-7 w-auto object-contain" />
         </div>
 
         <div className="hidden md:flex items-center gap-12 font-display font-black text-xs tracking-[0.2em] text-brand-red uppercase">
@@ -164,7 +164,7 @@ const Hero = () => {
           className="relative flex items-center justify-center p-0 md:p-2 z-10"
         >
           <motion.img
-            src="/images/pizza home def.png"
+            src="/images/pizza home def.webp"
             alt="Pepperoni Pizza"
             className="w-full md:w-[130%] max-w-none h-auto drop-shadow-[0_45px_45px_rgba(0,0,0,0.15)] mix-blend-multiply"
             animate={{ y: [0, -14, 0] }}
@@ -222,12 +222,12 @@ const MarqueeSection = () => {
 
 const Menu = () => {
   const items = [
-    { title: "CHEESE", price: "24", desc: "Tomato, Mozzarella", img: "/images/CHEESE.png" },
-    { title: "BRONX PEPPERONI (BEST SELLER)", price: "28", desc: "Pepperoni, Mozzarella, Tomato", img: "/images/BRONX PEPPERONI.png" },
-    { title: "CHEESE OVERLOAD", price: "26", desc: "Mozzarella, Parmesan, Cheese sauce", img: "/images/CHEESE OVERLOAD.png" },
-    { title: "SPICY PEPPERONI (BROOKLYN STYLE)", price: "29", desc: "Spicy salami, Hot honey, Chili flakes, Mozzarella, Tomato", img: "/images/SPICY PEPPERONI.png" },
-    { title: "HAWAII CLASSIC", price: "28", desc: "Tomato, Mozzarella, Ham, Pineapple", img: "/images/HAWAII CLASSIC.png" },
-    { title: "WHITE GARLIC", price: "27", desc: "Mozzarella, creamy triple cheese, garlic, black pepper", img: "/images/white garlik.png" }
+    { title: "CHEESE", price: "24", desc: "Tomato, Mozzarella", img: "/images/CHEESE.webp" },
+    { title: "BRONX PEPPERONI (BEST SELLER)", price: "28", desc: "Pepperoni, Mozzarella, Tomato", img: "/images/BRONX PEPPERONI.webp" },
+    { title: "CHEESE OVERLOAD", price: "26", desc: "Mozzarella, Parmesan, Cheese sauce", img: "/images/CHEESE OVERLOAD.webp" },
+    { title: "SPICY PEPPERONI (BROOKLYN STYLE)", price: "29", desc: "Spicy salami, Hot honey, Chili flakes, Mozzarella, Tomato", img: "/images/SPICY PEPPERONI.webp" },
+    { title: "HAWAII CLASSIC", price: "28", desc: "Tomato, Mozzarella, Ham, Pineapple", img: "/images/HAWAII CLASSIC.webp" },
+    { title: "WHITE GARLIC", price: "27", desc: "Mozzarella, creamy triple cheese, garlic, black pepper", img: "/images/white garlik.webp" }
   ];
 
   return (
@@ -306,7 +306,7 @@ const Story = () => (
       >
         <div className="rounded-[40px] overflow-hidden border-8 border-brand-bg shadow-2xl relative z-10">
           <img
-            src="/images/OUR STORY.png"
+            src="/images/OUR STORY.webp"
             alt="Poppy's Pizza atmosphere"
             className="w-full h-[280px] md:h-[600px] object-cover"
           />
