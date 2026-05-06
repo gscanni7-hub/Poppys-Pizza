@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-brand-bg: #f6e7d4;
+  --color-brand-red: #C8161D;
+  --color-brand-pink: #FFB7C5;
+  --color-brand-dark: #3D0C0C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-bg text-brand-dark font-sans overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-black uppercase tracking-tighter;
+  }
+}
+
+/* Custom styles for the screenshot replication */
+.text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+}
+
+.bg-checkered {
+  background-image: 
+    linear-gradient(45deg, #FFB7C5 25%, transparent 25%), 
+    linear-gradient(-45deg, #FFB7C5 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #FFB7C5 75%), 
+    linear-gradient(-45deg, transparent 75%, #FFB7C5 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.aspect-pizza {
+  aspect-ratio: 4/3;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(5px, -10px) rotate(2deg); }
+  66% { transform: translate(-5px, -5px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes float-complex {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(10px, -15px) rotate(5deg); }
+  50% { transform: translate(-5px, -25px) rotate(-3deg); }
+  75% { transform: translate(-12px, -10px) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-float-complex {
+  animation: float-complex 10s ease-in-out infinite;
+}
+
+.tilt-marquee {
+  transform: rotate(-1.5deg) scale(1.02);
+}
