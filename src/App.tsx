@@ -304,7 +304,7 @@ const Story = () => (
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         className="relative"
       >
-        <div className="rounded-[40px] overflow-hidden border-8 border-brand-bg shadow-2xl relative z-10">
+        <div className="rounded-[40px] overflow-hidden border-8 border-brand-red shadow-2xl relative z-10">
           <img
             src="/images/OUR STORY.webp"
             alt="Poppy's Pizza atmosphere"
