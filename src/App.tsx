@@ -256,7 +256,7 @@ const Menu = () => {
               whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(200,22,29,0.12)" }}
               className="bg-white rounded-3xl overflow-hidden border-2 border-brand-dark/5 hover:border-brand-red transition-colors group flex flex-col cursor-pointer"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-80 md:h-64 overflow-hidden relative">
                 <motion.img
                   src={item.img}
                   alt={item.title}
